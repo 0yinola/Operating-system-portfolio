@@ -28,7 +28,6 @@ const lockScreen = document.getElementById('lockScreen');
       lockScreen.classList.add('is-hidden');
       desktop.classList.add('is-visible');
       document.getElementById('welcomeToast').style.animation = 'toast-in .45s both';
-      window.setTimeout(() => document.getElementById('workWindow').classList.add('is-open'), 450);
     }
     document.getElementById('enterButton').addEventListener('click', signIn);
     lockScreen.addEventListener('click', (event) => { if (event.target === lockScreen) signIn(); });
@@ -149,3 +148,283 @@ const lockScreen = document.getElementById('lockScreen');
         document.querySelectorAll('[data-theme]').forEach((option) => { if (option.dataset.theme !== savedTheme) option.setAttribute('aria-pressed', 'false'); });
       }
     } catch {}
+
+    const analyticsContent = document.getElementById('analyticsContent');
+    const analyticsWindow = document.getElementById('analyticsWindow');
+    analyticsWindow.querySelectorAll('[data-analytics-tab]').forEach((button) => button.addEventListener('click', () => {
+      analyticsWindow.querySelectorAll('[data-analytics-tab]').forEach((tab) => tab.classList.toggle('active', tab === button));
+      analyticsContent.querySelectorAll('[data-analytics-page]').forEach((page) => page.classList.toggle('active', page.dataset.analyticsPage === button.dataset.analyticsTab));
+    }));
+    analyticsContent.querySelectorAll('[data-analytics-go]').forEach((button) => button.addEventListener('click', () => {
+      analyticsWindow.querySelector('[data-analytics-tab="projects"]').click();
+    }));
+
+    const projectSearch = document.getElementById('projectSearch');
+    const projectCards = [...document.querySelectorAll('.analytics-project')];
+    const projectFilters = [...document.querySelectorAll('[data-project-filter]')];
+    let activeProjectFilter = 'all';
+    function filterAnalyticsProjects() {
+      const query = projectSearch.value.trim().toLowerCase();
+      let visibleCount = 0;
+      projectCards.forEach((card) => {
+        const matchesFilter = activeProjectFilter === 'all' || card.dataset.tools.includes(activeProjectFilter);
+        const matchesQuery = card.textContent.toLowerCase().includes(query);
+        card.hidden = !(matchesFilter && matchesQuery);
+        if (!card.hidden) visibleCount += 1;
+      });
+      document.getElementById('projectEmpty').hidden = visibleCount !== 0;
+    }
+    projectSearch.addEventListener('input', filterAnalyticsProjects);
+    projectFilters.forEach((button) => button.addEventListener('click', () => {
+      activeProjectFilter = button.dataset.projectFilter;
+      projectFilters.forEach((filter) => filter.classList.toggle('active', filter === button));
+      filterAnalyticsProjects();
+    }));
+
+    const excelRecommendations = document.getElementById('excelRecommendations');
+    const recommendationsStatus = document.getElementById('recommendationsStatus');
+    try {
+      excelRecommendations.value = localStorage.getItem('oyinola-excel-recommendations') || '';
+    } catch {
+      recommendationsStatus.textContent = 'Recommendations could not be loaded from this browser.';
+    }
+    excelRecommendations.addEventListener('input', () => {
+      try {
+        localStorage.setItem('oyinola-excel-recommendations', excelRecommendations.value);
+        recommendationsStatus.textContent = 'Recommendations saved in this browser.';
+      } catch {
+        recommendationsStatus.textContent = 'Could not save recommendations in this browser.';
+      }
+    });
+
+    const powerbiRecommendations = document.getElementById('powerbiRecommendations');
+    const powerbiRecommendationsStatus = document.getElementById('powerbiRecommendationsStatus');
+    try {
+      powerbiRecommendations.value = localStorage.getItem('oyinola-powerbi-recommendations') || '';
+    } catch {
+      powerbiRecommendationsStatus.textContent = 'Recommendations could not be loaded from this browser.';
+    }
+    powerbiRecommendations.addEventListener('input', () => {
+      try {
+        localStorage.setItem('oyinola-powerbi-recommendations', powerbiRecommendations.value);
+        powerbiRecommendationsStatus.textContent = 'Recommendations saved in this browser.';
+      } catch {
+        powerbiRecommendationsStatus.textContent = 'Could not save recommendations in this browser.';
+      }
+    });
+
+    const skillSaveStatus = document.getElementById('skillSaveStatus');
+    document.querySelectorAll('[data-skill-description]').forEach((description) => {
+      try {
+        const savedDescription = localStorage.getItem(`oyinola-skill-${description.dataset.skillDescription}`);
+        if (savedDescription !== null) description.textContent = savedDescription;
+      } catch {
+        skillSaveStatus.textContent = 'Saved descriptions could not be loaded from this browser.';
+      }
+      description.addEventListener('input', () => {
+        try {
+          localStorage.setItem(`oyinola-skill-${description.dataset.skillDescription}`, description.textContent.trim());
+          skillSaveStatus.textContent = 'Description saved in this browser.';
+        } catch {
+          skillSaveStatus.textContent = 'Could not save this description in this browser.';
+        }
+      });
+    });
+
+    const notepadText = document.getElementById('notepadText');
+    const notepadStatus = document.getElementById('notepadStatus');
+    try {
+      notepadText.value = localStorage.getItem('oyinola-notepad') || '';
+    } catch {
+      notepadStatus.textContent = 'Notes could not be loaded from this browser.';
+    }
+    notepadText.addEventListener('input', () => {
+      try {
+        localStorage.setItem('oyinola-notepad', notepadText.value);
+        notepadStatus.textContent = 'Saved in this browser.';
+      } catch {
+        notepadStatus.textContent = 'Could not save notes in this browser.';
+      }
+    });
+    document.getElementById('clearNote').addEventListener('click', () => {
+      notepadText.value = '';
+      notepadText.dispatchEvent(new Event('input'));
+      notepadText.focus();
+    });
+
+    const chartMonths = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'];
+    const chartData = {
+      analysis: [4, 6, 3, 7, 5, 8],
+      visualization: [2, 4, 5, 3, 6, 5]
+    };
+    const visibleChartSeries = new Set(['analysis', 'visualization']);
+    function renderSampleChart() {
+      const chart = document.getElementById('sampleChart');
+      const plot = { left: 46, top: 18, width: 650, height: 220 };
+      const bottom = plot.top + plot.height;
+      const scale = plot.height / 10;
+      let markup = '';
+      for (let tick = 0; tick <= 10; tick += 2) {
+        const y = bottom - tick * scale;
+        markup += `<line class="chart-grid-line" x1="${plot.left}" y1="${y}" x2="${plot.left + plot.width}" y2="${y}"></line><text class="chart-label" x="${plot.left - 12}" y="${y + 4}" text-anchor="end">${tick}</text>`;
+      }
+      chartMonths.forEach((month, index) => {
+        const groupWidth = plot.width / chartMonths.length;
+        const center = plot.left + groupWidth * (index + .5);
+        markup += `<text class="chart-label" x="${center}" y="${bottom + 24}" text-anchor="middle">${month}</text>`;
+        [
+          { key: 'analysis', className: 'chart-bar-analysis', offset: -14 },
+          { key: 'visualization', className: 'chart-bar-visualization', offset: 14 }
+        ].forEach((series) => {
+          if (!visibleChartSeries.has(series.key)) return;
+          const value = chartData[series.key][index];
+          const height = value * scale;
+          const x = center + series.offset - 10;
+          const y = bottom - height;
+          const label = series.key === 'analysis' ? 'Analysis' : 'Visualization';
+          markup += `<rect class="${series.className}" x="${x}" y="${y}" width="20" height="${height}" rx="3"><title>${label}, ${month}: ${value} sample units</title></rect>`;
+        });
+      });
+      chart.innerHTML = markup;
+    }
+    renderSampleChart();
+    document.querySelectorAll('[data-chart-series]').forEach((button) => button.addEventListener('click', () => {
+      const series = button.dataset.chartSeries;
+      if (visibleChartSeries.has(series)) visibleChartSeries.delete(series);
+      else visibleChartSeries.add(series);
+      button.classList.toggle('active', visibleChartSeries.has(series));
+      renderSampleChart();
+    }));
+
+    const ticBoard = document.querySelector('.tic-board');
+    const ticStatus = document.getElementById('ticStatus');
+    let ticCells = Array(9).fill('');
+    let ticTurn = 'X';
+    let ticFinished = false;
+    const ticWinningLines = [[0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6], [1, 4, 7], [2, 5, 8], [0, 4, 8], [2, 4, 6]];
+    function renderTicBoard() {
+      ticBoard.innerHTML = '';
+      ticCells.forEach((mark, index) => {
+        const cell = document.createElement('button');
+        cell.type = 'button';
+        cell.className = 'tic-cell';
+        cell.setAttribute('role', 'gridcell');
+        cell.setAttribute('aria-label', `Square ${index + 1}${mark ? `, ${mark}` : ', empty'}`);
+        cell.textContent = mark;
+        cell.disabled = Boolean(mark) || ticFinished;
+        cell.addEventListener('click', () => playTicTurn(index));
+        ticBoard.append(cell);
+      });
+    }
+    function playTicTurn(index) {
+      if (ticFinished || ticCells[index]) return;
+      ticCells[index] = ticTurn;
+      const winner = ticWinningLines.some((line) => line.every((cell) => ticCells[cell] === ticTurn));
+      if (winner) {
+        ticFinished = true;
+        ticStatus.textContent = `${ticTurn} wins! Start a new game to play again.`;
+      } else if (ticCells.every(Boolean)) {
+        ticFinished = true;
+        ticStatus.textContent = "It's a draw. Start a new game to play again.";
+      } else {
+        ticTurn = ticTurn === 'X' ? 'O' : 'X';
+        ticStatus.textContent = `${ticTurn}'s turn`;
+      }
+      renderTicBoard();
+    }
+    function resetTicBoard() {
+      ticCells = Array(9).fill('');
+      ticTurn = 'X';
+      ticFinished = false;
+      ticStatus.textContent = "X's turn";
+      renderTicBoard();
+    }
+    document.getElementById('ticReset').addEventListener('click', resetTicBoard);
+    resetTicBoard();
+
+    const memoryBoard = document.querySelector('.memory-board');
+    const memoryStatus = document.getElementById('memoryStatus');
+    const memoryMoves = document.getElementById('memoryMoves');
+    const memorySymbols = ['●', '▲', '◆', '★', '♥', '✿', '☀', '■'];
+    let memoryCards = [];
+    let flippedCards = [];
+    let memoryMatches = 0;
+    let memoryMoveCount = 0;
+    let memoryLocked = false;
+    let memoryRound = 0;
+    function renderMemoryBoard() {
+      memoryBoard.innerHTML = '';
+      memoryCards.forEach((symbol, index) => {
+        const card = document.createElement('button');
+        card.type = 'button';
+        card.className = `memory-card${card.dataset.flipped ? ' flipped' : ''}`;
+        const isFlipped = flippedCards.includes(index) || card.classList.contains('matched');
+        card.textContent = isFlipped ? symbol : '?';
+        card.setAttribute('aria-label', isFlipped ? `Card ${index + 1}: ${symbol}` : `Hidden card ${index + 1}`);
+        card.addEventListener('click', () => flipMemoryCard(index));
+        memoryBoard.append(card);
+      });
+    }
+    function flipMemoryCard(index) {
+      if (memoryLocked || flippedCards.includes(index) || memoryBoard.children[index].classList.contains('matched')) return;
+      flippedCards.push(index);
+      const card = memoryBoard.children[index];
+      card.classList.add('flipped');
+      card.textContent = memoryCards[index];
+      card.setAttribute('aria-label', `Card ${index + 1}: ${memoryCards[index]}`);
+      if (flippedCards.length < 2) return;
+      memoryMoveCount += 1;
+      memoryMoves.textContent = `Moves: ${memoryMoveCount}`;
+      const [firstIndex, secondIndex] = flippedCards;
+      if (memoryCards[firstIndex] === memoryCards[secondIndex]) {
+        [firstIndex, secondIndex].forEach((cardIndex) => memoryBoard.children[cardIndex].classList.add('matched'));
+        memoryMatches += 1;
+        flippedCards = [];
+        if (memoryMatches === memorySymbols.length) memoryStatus.textContent = `You found every pair in ${memoryMoveCount} moves!`;
+        return;
+      }
+      memoryLocked = true;
+      memoryStatus.textContent = 'Not a match—try again.';
+      const currentRound = memoryRound;
+      window.setTimeout(() => {
+        if (currentRound !== memoryRound) return;
+        flippedCards.forEach((cardIndex) => {
+          const unmatchedCard = memoryBoard.children[cardIndex];
+          unmatchedCard.classList.remove('flipped');
+          unmatchedCard.textContent = '?';
+          unmatchedCard.setAttribute('aria-label', `Hidden card ${cardIndex + 1}`);
+        });
+        flippedCards = [];
+        memoryLocked = false;
+        memoryStatus.textContent = 'Find all matching pairs.';
+      }, 800);
+    }
+    function resetMemoryGame() {
+      memoryRound += 1;
+      memoryCards = [...memorySymbols, ...memorySymbols];
+      for (let index = memoryCards.length - 1; index > 0; index -= 1) {
+        const swapIndex = Math.floor(Math.random() * (index + 1));
+        [memoryCards[index], memoryCards[swapIndex]] = [memoryCards[swapIndex], memoryCards[index]];
+      }
+      flippedCards = [];
+      memoryMatches = 0;
+      memoryMoveCount = 0;
+      memoryLocked = false;
+      memoryStatus.textContent = 'Find all matching pairs.';
+      memoryMoves.textContent = 'Moves: 0';
+      renderMemoryBoard();
+    }
+    document.getElementById('memoryReset').addEventListener('click', resetMemoryGame);
+    resetMemoryGame();
+    document.querySelectorAll('[data-game-tab]').forEach((button) => button.addEventListener('click', () => {
+      document.querySelectorAll('[data-game-tab]').forEach((tab) => {
+        const active = tab === button;
+        tab.classList.toggle('active', active);
+        tab.setAttribute('aria-selected', String(active));
+      });
+      document.querySelectorAll('[data-game-panel]').forEach((panel) => {
+        const active = panel.dataset.gamePanel === button.dataset.gameTab;
+        panel.classList.toggle('active', active);
+        panel.hidden = !active;
+      });
+    }));
