@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
   <title>Oyinola OS | Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <main class="screen" id="screen">
     <div class="wallpaper" id="wallpaper" data-wallpaper="mountain"></div>
@@ -26,180 +28,836 @@
     <section class="desktop" id="desktop" aria-label="Oyinola desktop">
       <div class="desktop-icons">
         <button class="desktop-icon" data-open="workWindow" aria-label="Open My Work">
-          <svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M4 11.5A3.5 3.5 0 0 1 7.5 8H16l3.2 3.5h13.3a3.5 3.5 0 0 1 3.5 3.5v16a3.5 3.5 0 0 1-3.5 3.5h-25A3.5 3.5 0 0 1 4 31V11.5Z" fill="#E6B94F"/><path d="M4.5 16h31l-3 15.5a3 3 0 0 1-2.9 2.3H9.4a3 3 0 0 1-3-2.5L4.5 16Z" fill="#F1D27C"/><path d="M4.7 16h30.6" stroke="#FFF3BE" stroke-width="1.4"/></svg>
+          <svg viewBox="0 0 40 40" fill="none" aria-hidden="true">
+            <path
+              d="M4 11.5A3.5 3.5 0 0 1 7.5 8H16l3.2 3.5h13.3a3.5 3.5 0 0 1 3.5 3.5v16a3.5 3.5 0 0 1-3.5 3.5h-25A3.5 3.5 0 0 1 4 31V11.5Z"
+              fill="#E6B94F" />
+            <path d="M4.5 16h31l-3 15.5a3 3 0 0 1-2.9 2.3H9.4a3 3 0 0 1-3-2.5L4.5 16Z" fill="#F1D27C" />
+            <path d="M4.7 16h30.6" stroke="#FFF3BE" stroke-width="1.4" />
+          </svg>
           <span>My Work</span>
         </button>
         <button class="desktop-icon" data-open="analyticsWindow" aria-label="Open Analytics Lab">
-          <svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><rect x="4" y="5" width="32" height="30" rx="7" fill="#273D76"/><path d="M11 28V21m7 7V14m7 14v-9m7 9V11" stroke="#7DE2CE" stroke-width="3" stroke-linecap="round"/><path d="m10 17 7-5 7 4 8-7" stroke="#A6C8FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg viewBox="0 0 40 40" fill="none" aria-hidden="true">
+            <rect x="4" y="5" width="32" height="30" rx="7" fill="#273D76" />
+            <path d="M11 28V21m7 7V14m7 14v-9m7 9V11" stroke="#7DE2CE" stroke-width="3" stroke-linecap="round" />
+            <path d="m10 17 7-5 7 4 8-7" stroke="#A6C8FF" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
           <span>Analytics Lab</span>
         </button>
         <button class="desktop-icon" data-open="notepadWindow" aria-label="Open Notepad">
-          <svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><rect x="8" y="4" width="24" height="32" rx="4" fill="#D9F0E9"/><path d="M14 13h12m-12 6h12m-12 6h8" stroke="#347F73" stroke-width="2" stroke-linecap="round"/><path d="m23 32 2-6 8-8 4 4-8 8-6 2Z" fill="#E8B94E"/></svg>
+          <svg viewBox="0 0 40 40" fill="none" aria-hidden="true">
+            <rect x="8" y="4" width="24" height="32" rx="4" fill="#D9F0E9" />
+            <path d="M14 13h12m-12 6h12m-12 6h8" stroke="#347F73" stroke-width="2" stroke-linecap="round" />
+            <path d="m23 32 2-6 8-8 4 4-8 8-6 2Z" fill="#E8B94E" />
+          </svg>
           <span>Notepad</span>
         </button>
         <button class="desktop-icon" data-open="gamesWindow" aria-label="Open Games">
-          <svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><rect x="4" y="9" width="32" height="22" rx="8" fill="#D6C8FF"/><path d="M12 15v10m-5-5h10" stroke="#564094" stroke-width="2.6" stroke-linecap="round"/><circle cx="25" cy="17" r="2" fill="#735CB1"/><circle cx="30" cy="22" r="2" fill="#735CB1"/></svg>
+          <svg viewBox="0 0 40 40" fill="none" aria-hidden="true">
+            <rect x="4" y="9" width="32" height="22" rx="8" fill="#D6C8FF" />
+            <path d="M12 15v10m-5-5h10" stroke="#564094" stroke-width="2.6" stroke-linecap="round" />
+            <circle cx="25" cy="17" r="2" fill="#735CB1" />
+            <circle cx="30" cy="22" r="2" fill="#735CB1" />
+          </svg>
           <span>Games</span>
         </button>
         <button class="desktop-icon" data-open="aboutWindow" aria-label="Open About Me">
-          <svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><rect x="5" y="5" width="30" height="30" rx="8" fill="#B5E4D9"/><circle cx="20" cy="16" r="5.5" fill="#267B72"/><path d="M10.5 31c1.5-5.2 4.8-7.8 9.5-7.8s8 2.6 9.5 7.8" fill="#267B72"/></svg>
+          <svg viewBox="0 0 40 40" fill="none" aria-hidden="true">
+            <rect x="5" y="5" width="30" height="30" rx="8" fill="#B5E4D9" />
+            <circle cx="20" cy="16" r="5.5" fill="#267B72" />
+            <path d="M10.5 31c1.5-5.2 4.8-7.8 9.5-7.8s8 2.6 9.5 7.8" fill="#267B72" />
+          </svg>
           <span>About Me</span>
         </button>
         <button class="desktop-icon" data-open="settingsWindow" aria-label="Open Settings">
-          <svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M17.6 5h4.8l1.1 4.1c1.1.3 2.1.8 3 1.4l4-1.3 2.4 4.1-2.8 3.1c.2 1.1.2 2.3 0 3.4l2.8 3.1-2.4 4.1-4-1.3c-.9.6-1.9 1.1-3 1.4L22.4 31h-4.8l-1.1-4.1c-1.1-.3-2.1-.8-3-1.4l-4 1.3-2.4-4.1 2.8-3.1a9.9 9.9 0 0 1 0-3.4l-2.8-3.1 2.4-4.1 4 1.3c.9-.6 1.9-1.1 3-1.4L17.6 5Z" fill="#9BB4C9"/><circle cx="20" cy="17.5" r="5" fill="#35495E"/><circle cx="20" cy="17.5" r="2.1" fill="#DEEAF1"/></svg>
+          <svg viewBox="0 0 40 40" fill="none" aria-hidden="true">
+            <path
+              d="M17.6 5h4.8l1.1 4.1c1.1.3 2.1.8 3 1.4l4-1.3 2.4 4.1-2.8 3.1c.2 1.1.2 2.3 0 3.4l2.8 3.1-2.4 4.1-4-1.3c-.9.6-1.9 1.1-3 1.4L22.4 31h-4.8l-1.1-4.1c-1.1-.3-2.1-.8-3-1.4l-4 1.3-2.4-4.1 2.8-3.1a9.9 9.9 0 0 1 0-3.4l-2.8-3.1 2.4-4.1 4 1.3c.9-.6 1.9-1.1 3-1.4L17.6 5Z"
+              fill="#9BB4C9" />
+            <circle cx="20" cy="17.5" r="5" fill="#35495E" />
+            <circle cx="20" cy="17.5" r="2.1" fill="#DEEAF1" />
+          </svg>
           <span>Settings</span>
         </button>
         <button class="desktop-icon" data-open="recycleWindow" aria-label="Open Recycle Bin">
-          <svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M12 12h16l-1.4 21H13.4L12 12Z" fill="#D9EDF0"/><path d="M9 10h22v3H9zM16 7h8l1.5 3h-11L16 7Z" fill="#8EB6BE"/><path d="m17 17 1 11m5-11-1 11" stroke="#78A3AB" stroke-width="1.7" stroke-linecap="round"/></svg>
+          <svg viewBox="0 0 40 40" fill="none" aria-hidden="true">
+            <path d="M12 12h16l-1.4 21H13.4L12 12Z" fill="#D9EDF0" />
+            <path d="M9 10h22v3H9zM16 7h8l1.5 3h-11L16 7Z" fill="#8EB6BE" />
+            <path d="m17 17 1 11m5-11-1 11" stroke="#78A3AB" stroke-width="1.7" stroke-linecap="round" />
+          </svg>
           <span>Recycle Bin</span>
         </button>
       </div>
 
       <aside class="welcome-toast" id="welcomeToast" role="status">
-        <div class="welcome-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v3m0 12v3M3 12h3m12 0h3M5.6 5.6l2.1 2.1m8.6 8.6 2.1 2.1m0-12.8-2.1 2.1m-8.6 8.6-2.1 2.1"/><circle cx="12" cy="12" r="4"/></svg></div>
-        <div><h2>Welcome to Oyinola OS</h2><p>Make yourself at home. Feel free to have a look at my work.</p></div>
+        <div class="welcome-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 3v3m0 12v3M3 12h3m12 0h3M5.6 5.6l2.1 2.1m8.6 8.6 2.1 2.1m0-12.8-2.1 2.1m-8.6 8.6-2.1 2.1" />
+            <circle cx="12" cy="12" r="4" />
+          </svg></div>
+        <div>
+          <h2>Welcome to Oyinola OS</h2>
+          <p>Make yourself at home. Feel free to have a look at my work.</p>
+        </div>
         <button class="toast-close" id="toastClose" aria-label="Dismiss welcome message">&times;</button>
       </aside>
 
       <section class="window" id="workWindow" role="dialog" aria-label="My Work" aria-modal="false">
-        <div class="titlebar"><div class="titlebar-label"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 6.5A2.5 2.5 0 0 1 5.5 4H11l2.4 2.5h5.1A2.5 2.5 0 0 1 21 9v9.5a2.5 2.5 0 0 1-2.5 2.5h-13A2.5 2.5 0 0 1 3 18.5v-12Z"/></svg><span>My Work</span></div><div class="window-controls"><button class="window-control minimize" aria-label="Minimize window"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor"><path d="M3 8h10"/></svg></button><button class="window-control maximize" aria-label="Maximize window"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor"><rect x="3.5" y="3.5" width="9" height="9"/></svg></button><button class="window-control close" aria-label="Close window"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor"><path d="m4 4 8 8m0-8-8 8"/></svg></button></div></div>
+        <div class="titlebar">
+          <div class="titlebar-label"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path
+                d="M3 6.5A2.5 2.5 0 0 1 5.5 4H11l2.4 2.5h5.1A2.5 2.5 0 0 1 21 9v9.5a2.5 2.5 0 0 1-2.5 2.5h-13A2.5 2.5 0 0 1 3 18.5v-12Z" />
+            </svg><span>My Work</span></div>
+          <div class="window-controls"><button class="window-control minimize" aria-label="Minimize window"><svg
+                viewBox="0 0 16 16" fill="none" stroke="currentColor">
+                <path d="M3 8h10" />
+              </svg></button><button class="window-control maximize" aria-label="Maximize window"><svg
+                viewBox="0 0 16 16" fill="none" stroke="currentColor">
+                <rect x="3.5" y="3.5" width="9" height="9" />
+              </svg></button><button class="window-control close" aria-label="Close window"><svg viewBox="0 0 16 16"
+                fill="none" stroke="currentColor">
+                <path d="m4 4 8 8m0-8-8 8" />
+              </svg></button></div>
+        </div>
         <div class="window-body">
-          <header class="window-heading"><div><h1>Selected work</h1><p>A few things I've been making. More projects on the way.</p></div><span class="work-count">4 projects</span></header>
+          <header class="window-heading">
+            <div>
+              <h1>Selected work</h1>
+              <p>A few things I've been making. More projects on the way.</p>
+            </div><span class="work-count">4 projects</span>
+          </header>
           <div class="project-grid">
-            <article class="project-card"><div class="project-art has-image printivo-art"><span class="art-label">Printivo</span><span class="art-caption">PRINT &amp; DESIGN</span></div><div class="project-info"><h2>Printivo</h2><p>A storefront concept for discovering custom print products, with a clear path from browsing to ordering.</p><div class="tag-list"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Bootstrap</span></div><div class="project-links"><a class="project-link primary" href="https://printivo-live-test.vercel.app/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 3h7v7m-1-6-9 9"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>Live demo</a><a class="project-link" href="https://github.com/0yinola/Printivo-live-test" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .9a11.1 11.1 0 0 0-3.5 21.6c.55.1.76-.24.76-.53v-2.08c-3.1.67-3.76-1.32-3.76-1.32-.5-1.28-1.23-1.62-1.23-1.62-1-.69.08-.68.08-.68 1.1.08 1.69 1.12 1.69 1.12.98 1.68 2.57 1.2 3.2.92.1-.72.38-1.2.69-1.48-2.48-.28-5.08-1.24-5.08-5.5 0-1.22.44-1.42.11-2.96 0 0 .94-.3 3.05 1.15a10.6 10.6 0 0 1 5.55 0c2.12-1.44 3.05-1.15 3.05-1.15.61 1.54.23 2.68.11 2.96.72.78 1.15 1.78 1.15 3.01v3.06c0 .29.2.63.77.52A11.1 11.1 0 0 0 12 .9Z"/></svg>Source code</a></div></div></article>
-            <article class="project-card"><div class="project-art has-image google-analytics-art"><span class="art-label">Google Analytics</span><span class="art-caption">DATA &amp; INSIGHTS</span></div><div class="project-info"><h2>Google Analytics</h2><p>A Google Analytics-inspired page introducing digital measurement, useful insights, and developer resources.</p><div class="tag-list"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div><div class="project-links"><a class="project-link primary" href="https://googleanalytics-pied.vercel.app/" target="_blank" rel="noopener noreferrer">Live demo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 3h7v7m-1-6-9 9"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></a><a class="project-link" href="https://github.com/0yinola/GRID" target="_blank" rel="noopener noreferrer">Source code</a></div></div></article>
-            <article class="project-card"><div class="project-art has-image traffic-art"><span class="art-label">Traffic Animation</span><span class="art-caption">MOTION &amp; INTERACTION</span></div><div class="project-info"><h2>Traffic Animation</h2><p>An animated street scene that brings city traffic to life with moving vehicles and pedestrians.</p><div class="tag-list"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div><div class="project-links"><a class="project-link primary" href="https://0yinola.github.io/TrafficAnimation/" target="_blank" rel="noopener noreferrer">Live demo</a><a class="project-link" href="https://github.com/0yinola/TrafficAnimation" target="_blank" rel="noopener noreferrer">Source code</a></div></div></article>
-            <article class="project-card"><div class="project-art has-image facebook-art"><span class="art-label">Facebook Clone</span><span class="art-caption">SOCIAL UI</span></div><div class="project-info"><h2>Facebook Clone</h2><p>A responsive Facebook-inspired login page recreating a familiar social sign-in experience.</p><div class="tag-list"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div><div class="project-links"><a class="project-link primary" href="https://facebook-login-iota-mocha.vercel.app/" target="_blank" rel="noopener noreferrer">Live demo</a><a class="project-link" href="https://github.com/0yinola/Facebook-Login" target="_blank" rel="noopener noreferrer">Source code</a></div></div></article>
+            <article class="project-card">
+              <div class="project-art has-image printivo-art"><span class="art-label">Printivo</span><span
+                  class="art-caption">PRINT &amp; DESIGN</span></div>
+              <div class="project-info">
+                <h2>Printivo</h2>
+                <p>A storefront concept for discovering custom print products, with a clear path from browsing to
+                  ordering.</p>
+                <div class="tag-list"><span class="tag">HTML</span><span class="tag">CSS</span><span
+                    class="tag">Bootstrap</span></div>
+                <div class="project-links"><a class="project-link primary" href="https://printivo-live-test.vercel.app/"
+                    target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="2">
+                      <path d="M14 3h7v7m-1-6-9 9" />
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                    </svg>Live demo</a><a class="project-link" href="https://github.com/0yinola/Printivo-live-test"
+                    target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor">
+                      <path
+                        d="M12 .9a11.1 11.1 0 0 0-3.5 21.6c.55.1.76-.24.76-.53v-2.08c-3.1.67-3.76-1.32-3.76-1.32-.5-1.28-1.23-1.62-1.23-1.62-1-.69.08-.68.08-.68 1.1.08 1.69 1.12 1.69 1.12.98 1.68 2.57 1.2 3.2.92.1-.72.38-1.2.69-1.48-2.48-.28-5.08-1.24-5.08-5.5 0-1.22.44-1.42.11-2.96 0 0 .94-.3 3.05 1.15a10.6 10.6 0 0 1 5.55 0c2.12-1.44 3.05-1.15 3.05-1.15.61 1.54.23 2.68.11 2.96.72.78 1.15 1.78 1.15 3.01v3.06c0 .29.2.63.77.52A11.1 11.1 0 0 0 12 .9Z" />
+                    </svg>Source code</a></div>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="project-art has-image google-analytics-art"><span class="art-label">Google
+                  Analytics</span><span class="art-caption">DATA &amp; INSIGHTS</span></div>
+              <div class="project-info">
+                <h2>Google Analytics</h2>
+                <p>A Google Analytics-inspired page introducing digital measurement, useful insights, and developer
+                  resources.</p>
+                <div class="tag-list"><span class="tag">HTML</span><span class="tag">CSS</span><span
+                    class="tag">JavaScript</span></div>
+                <div class="project-links"><a class="project-link primary"
+                    href="https://googleanalytics-pied.vercel.app/" target="_blank" rel="noopener noreferrer">Live demo
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M14 3h7v7m-1-6-9 9" />
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                    </svg></a><a class="project-link" href="https://github.com/0yinola/GRID" target="_blank"
+                    rel="noopener noreferrer">Source code</a></div>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="project-art has-image traffic-art"><span class="art-label">Traffic Animation</span><span
+                  class="art-caption">MOTION &amp; INTERACTION</span></div>
+              <div class="project-info">
+                <h2>Traffic Animation</h2>
+                <p>An animated street scene that brings city traffic to life with moving vehicles and pedestrians.</p>
+                <div class="tag-list"><span class="tag">HTML</span><span class="tag">CSS</span><span
+                    class="tag">JavaScript</span></div>
+                <div class="project-links"><a class="project-link primary"
+                    href="https://0yinola.github.io/TrafficAnimation/" target="_blank" rel="noopener noreferrer">Live
+                    demo</a><a class="project-link" href="https://github.com/0yinola/TrafficAnimation" target="_blank"
+                    rel="noopener noreferrer">Source code</a></div>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="project-art has-image facebook-art"><span class="art-label">Facebook Clone</span><span
+                  class="art-caption">SOCIAL UI</span></div>
+              <div class="project-info">
+                <h2>Facebook Clone</h2>
+                <p>A responsive Facebook-inspired login page recreating a familiar social sign-in experience.</p>
+                <div class="tag-list"><span class="tag">HTML</span><span class="tag">CSS</span><span
+                    class="tag">JavaScript</span></div>
+                <div class="project-links"><a class="project-link primary"
+                    href="https://facebook-login-iota-mocha.vercel.app/" target="_blank" rel="noopener noreferrer">Live
+                    demo</a><a class="project-link" href="https://github.com/0yinola/Facebook-Login" target="_blank"
+                    rel="noopener noreferrer">Source code</a></div>
+              </div>
+            </article>
           </div>
         </div>
       </section>
 
-      <section class="window analytics-window" id="analyticsWindow" role="dialog" aria-label="Analytics Lab" aria-modal="false">
-        <div class="titlebar"><div class="titlebar-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 3v18h18"/><path d="m7 14 4-4 4 3 6-7"/><path d="M7 18v-2m5 2v-6m5 6v-4m5 4V8"/></svg><span>Analytics Lab</span></div><div class="window-controls"><button class="window-control minimize" aria-label="Minimize window"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor"><path d="M3 8h10"/></svg></button><button class="window-control maximize" aria-label="Maximize window"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor"><rect x="3.5" y="3.5" width="9" height="9"/></svg></button><button class="window-control close" aria-label="Close window"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor"><path d="m4 4 8 8m0-8-8 8"/></svg></button></div></div>
+      <section class="window analytics-window" id="analyticsWindow" role="dialog" aria-label="Analytics Lab"
+        aria-modal="false">
+        <div class="titlebar">
+          <div class="titlebar-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M3 3v18h18" />
+              <path d="m7 14 4-4 4 3 6-7" />
+              <path d="M7 18v-2m5 2v-6m5 6v-4m5 4V8" />
+            </svg><span>Analytics Lab</span></div>
+          <div class="window-controls"><button class="window-control minimize" aria-label="Minimize window"><svg
+                viewBox="0 0 16 16" fill="none" stroke="currentColor">
+                <path d="M3 8h10" />
+              </svg></button><button class="window-control maximize" aria-label="Maximize window"><svg
+                viewBox="0 0 16 16" fill="none" stroke="currentColor">
+                <rect x="3.5" y="3.5" width="9" height="9" />
+              </svg></button><button class="window-control close" aria-label="Close window"><svg viewBox="0 0 16 16"
+                fill="none" stroke="currentColor">
+                <path d="m4 4 8 8m0-8-8 8" />
+              </svg></button></div>
+        </div>
         <div class="analytics-shell">
           <nav class="analytics-nav" aria-label="Analytics Lab sections">
             <div class="analytics-brand"><span class="analytics-brand-mark">▥</span><span>Analytics Lab</span></div>
             <button class="analytics-tab active" data-analytics-tab="dashboard">⌂ <span>Dashboard</span></button>
             <button class="analytics-tab" data-analytics-tab="projects">▱ <span>Projects</span></button>
             <button class="analytics-tab" data-analytics-tab="tools">⚒ <span>Tools &amp; Skills</span></button>
-            <button class="analytics-tab" data-analytics-tab="visualizations">▥ <span>Data Visualizations</span></button>
+            <button class="analytics-tab" data-analytics-tab="visualizations">▥ <span>Data
+                Visualizations</span></button>
             <button class="analytics-tab" data-analytics-tab="certificates">◇ <span>Certificates</span></button>
             <div class="analytics-nav-note">Better data.<br>Better decisions.<br>That's the goal.</div>
           </nav>
           <div class="analytics-content" id="analyticsContent">
             <section class="analytics-page active" data-analytics-page="dashboard">
-              <header class="analytics-welcome"><div><h1>Hello, I'm Oyinola 👋</h1><p>Welcome to my Analytics Lab. Explore my data analysis work, dashboards, and insights.</p></div><span>Data turns ideas into decisions ↗</span></header>
-              <div class="analytics-stats"><article><span class="stat-icon blue">▤</span><div><small>Projects</small><strong>2 dashboard projects</strong></div></article><article><span class="stat-icon green">▥</span><div><small>Dashboards</small><strong>6 dashboards</strong></div></article><article><span class="stat-icon violet">&lt;/&gt;</span><div><small>Tools</small><strong>6 listed</strong></div></article><article><span class="stat-icon amber">☆</span><div><small>Key focus</small><strong>Data analysis &amp; visualization</strong></div></article></div>
-              <div class="analytics-dashboard-grid"><section class="analytics-panel featured-panel"><div class="analytics-panel-heading"><h2>Featured projects</h2><button class="text-button" data-analytics-go="projects">View all →</button></div><div class="featured-projects">
-                <article class="featured-card"><div class="featured-art sales-art"><span>▥</span><i>▂ ▅ ▃ ▆</i></div><h3>Sales Performance</h3><p>Sample project concept · Explore sales trends and product performance.</p><span class="tool-chip">Excel · Power BI</span></article>
-                <article class="featured-card"><div class="featured-art churn-art"><span>↗</span><i>▁ ▃ ▅ ▄ ▆</i></div><h3>Customer Trends</h3><p>Sample project concept · Explore customer patterns with illustrative data.</p><span class="tool-chip">SQL · Python</span></article>
-                <article class="featured-card"><div class="featured-art global-art"><span>◎</span><i>▂ ▄ ▅</i></div><h3>Data Storytelling</h3><p>Sample project concept · Turn a dataset into a clear visual story.</p><span class="tool-chip">Tableau · SPSS</span></article>
-              </div></section><aside class="analytics-side-panels"><section class="analytics-panel"><h2>Tools in this lab</h2><div class="tool-mini-grid"><span>▦<small>Excel</small></span><span>▥<small>Power BI</small></span><span>✣<small>Tableau</small></span><span>▤<small>SQL</small></span><span>⌘<small>Python</small></span><span>▣<small>SPSS</small></span></div></section><section class="analytics-panel focus-panel"><h2>Current focus</h2><p>Building clear, useful analysis and visualizations. Add your current goals and achievements in Tools &amp; Skills.</p></section></aside></div>
+              <header class="analytics-welcome">
+                <div>
+                  <h1>Hello, I'm Oyinola 👋</h1>
+                  <p>Welcome to my Analytics Lab. Explore my data analysis work, dashboards, and insights.</p>
+                </div><span>Data turns ideas into decisions ↗</span>
+              </header>
+              <div class="analytics-stats">
+                <article><span class="stat-icon blue">▤</span>
+                  <div><small>Projects</small><strong>2 dashboard projects</strong></div>
+                </article>
+                <article><span class="stat-icon green">▥</span>
+                  <div><small>Dashboards</small><strong>6 dashboards</strong></div>
+                </article>
+                <article><span class="stat-icon violet">&lt;/&gt;</span>
+                  <div><small>Tools</small><strong>6 listed</strong></div>
+                </article>
+                <article><span class="stat-icon amber">☆</span>
+                  <div><small>Key focus</small><strong>Data analysis &amp; visualization</strong></div>
+                </article>
+              </div>
+              <div class="analytics-dashboard-grid">
+                <section class="analytics-panel featured-panel">
+                  <div class="analytics-panel-heading">
+                    <h2>Featured projects</h2><button class="text-button" data-analytics-go="projects">View all
+                      →</button>
+                  </div>
+                  <div class="featured-projects">
+                    <article class="featured-card">
+                      <div class="featured-art sales-art"><span>▥</span><i>▂ ▅ ▃ ▆</i></div>
+                      <h3>Sales Performance</h3>
+                      <p>Sample project concept · Explore sales trends and product performance.</p><span
+                        class="tool-chip">Excel · Power BI</span>
+                    </article>
+                    <article class="featured-card">
+                      <div class="featured-art churn-art"><span>↗</span><i>▁ ▃ ▅ ▄ ▆</i></div>
+                      <h3>Customer Trends</h3>
+                      <p>Sample project concept · Explore customer patterns with illustrative data.</p><span
+                        class="tool-chip">SQL · Python</span>
+                    </article>
+                    <article class="featured-card">
+                      <div class="featured-art global-art"><span>◎</span><i>▂ ▄ ▅</i></div>
+                      <h3>Data Storytelling</h3>
+                      <p>Sample project concept · Turn a dataset into a clear visual story.</p><span
+                        class="tool-chip">Tableau · SPSS</span>
+                    </article>
+                  </div>
+                </section>
+                <aside class="analytics-side-panels">
+                  <section class="analytics-panel">
+                    <h2>Tools in this lab</h2>
+                    <div class="tool-mini-grid"><span>▦<small>Excel</small></span><span>▥<small>Power
+                          BI</small></span><span>✣<small>Tableau</small></span><span>▤<small>SQL</small></span><span>⌘<small>Python</small></span><span>▣<small>SPSS</small></span>
+                    </div>
+                  </section>
+                  <section class="analytics-panel focus-panel">
+                    <h2>Current focus</h2>
+                    <p>Building clear, useful analysis and visualizations. Add your current goals and achievements in
+                      Tools &amp; Skills.</p>
+                  </section>
+                </aside>
+              </div>
             </section>
             <section class="analytics-page" data-analytics-page="projects">
-              <header class="analytics-page-heading"><div><h1>Projects</h1><p>Explore the Excel and Power BI dashboards, plus sample project concepts.</p></div></header>
-              <div class="project-filters"><label class="analytics-search">⌕ <input id="projectSearch" type="search" placeholder="Search projects" aria-label="Search analytics projects"></label><div class="category-filters" role="group" aria-label="Filter projects by tool"><button class="category-filter active" data-project-filter="all">All</button><button class="category-filter" data-project-filter="Excel">Excel</button><button class="category-filter" data-project-filter="Power BI">Power BI</button><button class="category-filter" data-project-filter="Tableau">Tableau</button><button class="category-filter" data-project-filter="SQL">SQL</button><button class="category-filter" data-project-filter="Python">Python</button><button class="category-filter" data-project-filter="SPSS">SPSS</button></div></div>
+              <header class="analytics-page-heading">
+                <div>
+                  <h1>Projects</h1>
+                  <p>Explore the Excel and Power BI dashboards, plus sample project concepts.</p>
+                </div>
+              </header>
+              <div class="project-filters"><label class="analytics-search">⌕ <input id="projectSearch" type="search"
+                    placeholder="Search projects" aria-label="Search analytics projects"></label>
+                <div class="category-filters" role="group" aria-label="Filter projects by tool"><button
+                    class="category-filter active" data-project-filter="all">All</button><button class="category-filter"
+                    data-project-filter="Excel">Excel</button><button class="category-filter"
+                    data-project-filter="Power BI">Power BI</button><button class="category-filter"
+                    data-project-filter="Tableau">Tableau</button><button class="category-filter"
+                    data-project-filter="SQL">SQL</button><button class="category-filter"
+                    data-project-filter="Python">Python</button><button class="category-filter"
+                    data-project-filter="SPSS">SPSS</button></div>
+              </div>
               <div class="analytics-project-grid" id="analyticsProjectGrid">
                 <article class="analytics-project excel-dashboard-project" data-tools="Excel">
                   <div class="analytics-project-info">
-                    <span class="project-type-label">EXCEL DASHBOARD</span><h2>Sales Performance Dashboards</h2>
+                    <span class="project-type-label">EXCEL DASHBOARD</span>
+                    <h2>Sales Performance Dashboards</h2>
                     <p>Three views of sales, regional, and product performance.</p>
                     <div class="tool-chip-row"><span>Excel</span></div>
                     <div class="excel-dashboard-gallery">
-                      <figure><a href="image/excel-overview-dashboard.png" target="_blank" rel="noopener noreferrer"><img src="image/excel-overview-dashboard.png" alt="Overview performance dashboard showing sales, quantity, customers, products, shipment time, region, products, order year, category, subcategory, group, and country charts"></a><figcaption>Overview Dashboard</figcaption></figure>
-                      <figure><a href="image/excel-region-dashboard.png" target="_blank" rel="noopener noreferrer"><img src="image/excel-region-dashboard.png" alt="Regional performance analysis dashboard with top cities by sales and profit, top selling products, and country quantities"></a><figcaption>Region Dashboard</figcaption></figure>
-                      <figure><a href="image/excel-product-dashboard.png" target="_blank" rel="noopener noreferrer"><img src="image/excel-product-dashboard.png" alt="Product performance analysis dashboard comparing product sales, profit, and customer counts"></a><figcaption>Product Dashboard</figcaption></figure>
+                      <figure><a href="image/excel-overview-dashboard.png" target="_blank"
+                          rel="noopener noreferrer"><img src="image/excel-overview-dashboard.png"
+                            alt="Overview performance dashboard showing sales, quantity, customers, products, shipment time, region, products, order year, category, subcategory, group, and country charts"></a>
+                        <figcaption>Overview Dashboard</figcaption>
+                      </figure>
+                      <figure><a href="image/excel-region-dashboard.png" target="_blank" rel="noopener noreferrer"><img
+                            src="image/excel-region-dashboard.png"
+                            alt="Regional performance analysis dashboard with top cities by sales and profit, top selling products, and country quantities"></a>
+                        <figcaption>Region Dashboard</figcaption>
+                      </figure>
+                      <figure><a href="image/excel-product-dashboard.png" target="_blank" rel="noopener noreferrer"><img
+                            src="image/excel-product-dashboard.png"
+                            alt="Product performance analysis dashboard comparing product sales, profit, and customer counts"></a>
+                        <figcaption>Product Dashboard</figcaption>
+                      </figure>
                     </div>
-                    <label class="recommendations-field" for="excelRecommendations">My recommendations<textarea id="excelRecommendations" rows="4" placeholder="Write your recommendations for this dashboard..."></textarea></label>
-                    <p class="recommendations-status" id="recommendationsStatus" role="status" aria-live="polite">Recommendations are saved in this browser.</p>
+                    <label class="recommendations-field" for="excelRecommendations">My recommendations<textarea
+                        id="excelRecommendations" rows="4"
+                        placeholder="Write your recommendations for this dashboard..."></textarea></label>
+                    <p class="recommendations-status" id="recommendationsStatus" role="status" aria-live="polite">
+                      Recommendations are saved in this browser.</p>
                   </div>
                 </article>
-                <article class="analytics-project excel-dashboard-project powerbi-dashboard-project" data-tools="Power BI">
+                <article class="analytics-project excel-dashboard-project powerbi-dashboard-project"
+                  data-tools="Power BI">
                   <div class="analytics-project-info">
-                    <span class="project-type-label">POWER BI DASHBOARD</span><h2>Coffee Performance &amp; Market Insights</h2>
-                    <p>Three connected dashboard views: coffee overview, brand performance and pricing, and regional market insights.</p>
+                    <span class="project-type-label">POWER BI DASHBOARD</span>
+                    <h2>Coffee Performance &amp; Market Insights</h2>
+                    <p>Three connected dashboard views: coffee overview, brand performance and pricing, and regional
+                      market insights.</p>
                     <div class="tool-chip-row"><span>Power BI</span></div>
                     <div class="excel-dashboard-gallery">
-                      <figure><a href="image/powerbi-overview-dashboard.png" target="_blank" rel="noopener noreferrer"><img src="image/powerbi-overview-dashboard.png" alt="World Coffee Roaster Review overview dashboard showing coffee review metrics, average rating by origin, top roasters, total reviews, and light roast coffees"></a><figcaption>Overview Dashboard</figcaption></figure>
-                      <figure><a href="image/powerbi-coffee-dashboard.png" target="_blank" rel="noopener noreferrer"><img src="image/powerbi-coffee-dashboard.png" alt="Coffee brand performance and price analysis dashboard with coffee filters, brand ratings by year, expensive coffees, and price versus rating"></a><figcaption>Coffee Performance Dashboard</figcaption></figure>
-                      <figure><a href="image/powerbi-market-dashboard.png" target="_blank" rel="noopener noreferrer"><img src="image/powerbi-market-dashboard.png" alt="Regional aroma and Asian market insights dashboard with North America aroma analysis, top rated Asian coffee brands, mouthfeel, and market recommendations"></a><figcaption>Market Insight Dashboard</figcaption></figure>
+                      <figure><a href="image/powerbi-overview-dashboard.png" target="_blank"
+                          rel="noopener noreferrer"><img src="image/powerbi-overview-dashboard.png"
+                            alt="World Coffee Roaster Review overview dashboard showing coffee review metrics, average rating by origin, top roasters, total reviews, and light roast coffees"></a>
+                        <figcaption>Overview Dashboard</figcaption>
+                      </figure>
+                      <figure><a href="image/powerbi-coffee-dashboard.png" target="_blank"
+                          rel="noopener noreferrer"><img src="image/powerbi-coffee-dashboard.png"
+                            alt="Coffee brand performance and price analysis dashboard with coffee filters, brand ratings by year, expensive coffees, and price versus rating"></a>
+                        <figcaption>Coffee Performance Dashboard</figcaption>
+                      </figure>
+                      <figure><a href="image/powerbi-market-dashboard.png" target="_blank"
+                          rel="noopener noreferrer"><img src="image/powerbi-market-dashboard.png"
+                            alt="Regional aroma and Asian market insights dashboard with North America aroma analysis, top rated Asian coffee brands, mouthfeel, and market recommendations"></a>
+                        <figcaption>Market Insight Dashboard</figcaption>
+                      </figure>
                     </div>
-                    <label class="recommendations-field" for="powerbiRecommendations">My recommendations<textarea id="powerbiRecommendations" rows="4" placeholder="Write your recommendations for these dashboards..."></textarea></label>
-                    <p class="recommendations-status" id="powerbiRecommendationsStatus" role="status" aria-live="polite">Recommendations are saved in this browser.</p>
+                    <label class="recommendations-field" for="powerbiRecommendations">My recommendations<textarea
+                        id="powerbiRecommendations" rows="4"
+                        placeholder="Write your recommendations for these dashboards..."></textarea></label>
+                    <p class="recommendations-status" id="powerbiRecommendationsStatus" role="status"
+                      aria-live="polite">Recommendations are saved in this browser.</p>
                   </div>
                 </article>
-                <article class="analytics-project" data-tools="Tableau SQL"><div class="project-thumb customer-thumb">◎ <span>CUSTOMER TRENDS</span></div><div class="analytics-project-info"><span class="sample-label">SAMPLE CONCEPT</span><h2>Customer Trends</h2><p>A starter concept for exploring customer segments and activity.</p><div class="tool-chip-row"><span>Tableau</span><span>SQL</span></div><details><summary>Project details</summary><p><strong>Business question:</strong> How do customer groups differ in the sample?</p><p><strong>Process:</strong> Prepare a mock dataset, query grouped measures, and compare segments.</p><p><strong>Finding:</strong> Illustrative data only; add findings after analysis.</p><p class="no-report">Report or repository: not added yet.</p></details></div></article>
-                <article class="analytics-project" data-tools="Python SPSS"><div class="project-thumb data-thumb">⌘ <span>DATA EXPLORATION</span></div><div class="analytics-project-info"><span class="sample-label">SAMPLE CONCEPT</span><h2>Data Exploration</h2><p>A starter workflow for checking distributions and summarizing a dataset.</p><div class="tool-chip-row"><span>Python</span><span>SPSS</span></div><details><summary>Project details</summary><p><strong>Business question:</strong> What patterns can descriptive analysis reveal?</p><p><strong>Process:</strong> Validate fields, summarize distributions, and visualize sample measures.</p><p><strong>Finding:</strong> No real dataset has been supplied; results are not claimed.</p><p class="no-report">Report or repository: not added yet.</p></details></div></article>
-              </div><p class="project-empty" id="projectEmpty" hidden>No projects match this search and filter.</p>
+                <article class="analytics-project" data-tools="Tableau SQL">
+                  <div class="project-thumb customer-thumb">◎ <span>CUSTOMER TRENDS</span></div>
+                  <div class="analytics-project-info"><span class="sample-label">SAMPLE CONCEPT</span>
+                    <h2>Customer Trends</h2>
+                    <p>A starter concept for exploring customer segments and activity.</p>
+                    <div class="tool-chip-row"><span>Tableau</span><span>SQL</span></div>
+                    <details>
+                      <summary>Project details</summary>
+                      <p><strong>Business question:</strong> How do customer groups differ in the sample?</p>
+                      <p><strong>Process:</strong> Prepare a mock dataset, query grouped measures, and compare segments.
+                      </p>
+                      <p><strong>Finding:</strong> Illustrative data only; add findings after analysis.</p>
+                      <p class="no-report">Report or repository: not added yet.</p>
+                    </details>
+                  </div>
+                </article>
+                <article class="analytics-project" data-tools="Python SPSS">
+                  <div class="project-thumb data-thumb">⌘ <span>DATA EXPLORATION</span></div>
+                  <div class="analytics-project-info"><span class="sample-label">SAMPLE CONCEPT</span>
+                    <h2>Data Exploration</h2>
+                    <p>A starter workflow for checking distributions and summarizing a dataset.</p>
+                    <div class="tool-chip-row"><span>Python</span><span>SPSS</span></div>
+                    <details>
+                      <summary>Project details</summary>
+                      <p><strong>Business question:</strong> What patterns can descriptive analysis reveal?</p>
+                      <p><strong>Process:</strong> Validate fields, summarize distributions, and visualize sample
+                        measures.</p>
+                      <p><strong>Finding:</strong> No real dataset has been supplied; results are not claimed.</p>
+                      <p class="no-report">Report or repository: not added yet.</p>
+                    </details>
+                  </div>
+                </article>
+              </div>
+              <p class="project-empty" id="projectEmpty" hidden>No projects match this search and filter.</p>
             </section>
             <section class="analytics-page" data-analytics-page="tools">
-              <header class="analytics-page-heading"><div><h1>Tools &amp; Skills</h1><p>Tool descriptions are editable. No skill levels are assumed.</p></div></header><p class="sample-notice">Select a description to edit it. Updates are saved in this browser.</p>
+              <header class="analytics-page-heading">
+                <div>
+                  <h1>Tools &amp; Skills</h1>
+                  <p>Tool descriptions are editable. No skill levels are assumed.</p>
+                </div>
+              </header>
+              <p class="sample-notice">Select a description to edit it. Updates are saved in this browser.</p>
               <div class="analytics-tools-grid">
-                <article class="tool-detail"><span class="tool-detail-icon excel-icon">▦</span><div><h2>Excel</h2><p contenteditable="true" data-skill-description="excel" aria-label="Editable Excel description">Add your Excel skills or project examples here.</p></div></article>
-                <article class="tool-detail"><span class="tool-detail-icon powerbi-icon">▥</span><div><h2>Power BI</h2><p contenteditable="true" data-skill-description="powerbi" aria-label="Editable Power BI description">Add your Power BI skills or project examples here.</p></div></article>
-                <article class="tool-detail"><span class="tool-detail-icon tableau-icon">✣</span><div><h2>Tableau</h2><p contenteditable="true" data-skill-description="tableau" aria-label="Editable Tableau description">Add your Tableau skills or project examples here.</p></div></article>
-                <article class="tool-detail"><span class="tool-detail-icon sql-icon">▤</span><div><h2>SQL</h2><p contenteditable="true" data-skill-description="sql" aria-label="Editable SQL description">Add your SQL skills or project examples here.</p></div></article>
-                <article class="tool-detail"><span class="tool-detail-icon python-icon">⌘</span><div><h2>Python</h2><p contenteditable="true" data-skill-description="python" aria-label="Editable Python description">Add your Python skills or project examples here.</p></div></article>
-                <article class="tool-detail"><span class="tool-detail-icon spss-icon">▣</span><div><h2>SPSS</h2><p contenteditable="true" data-skill-description="spss" aria-label="Editable SPSS description">Add your SPSS skills or project examples here.</p></div></article>
-              </div><p class="save-status" id="skillSaveStatus" role="status" aria-live="polite"></p>
+                <article class="tool-detail"><span class="tool-detail-icon excel-icon">▦</span>
+                  <div>
+                    <h2>Excel</h2>
+                    <p contenteditable="true" data-skill-description="excel" aria-label="Editable Excel description">Add
+                      your Excel skills or project examples here.</p>
+                  </div>
+                </article>
+                <article class="tool-detail"><span class="tool-detail-icon powerbi-icon">▥</span>
+                  <div>
+                    <h2>Power BI</h2>
+                    <p contenteditable="true" data-skill-description="powerbi"
+                      aria-label="Editable Power BI description">Add your Power BI skills or project examples here.</p>
+                  </div>
+                </article>
+                <article class="tool-detail"><span class="tool-detail-icon tableau-icon">✣</span>
+                  <div>
+                    <h2>Tableau</h2>
+                    <p contenteditable="true" data-skill-description="tableau"
+                      aria-label="Editable Tableau description">Add your Tableau skills or project examples here.</p>
+                  </div>
+                </article>
+                <article class="tool-detail"><span class="tool-detail-icon sql-icon">▤</span>
+                  <div>
+                    <h2>SQL</h2>
+                    <p contenteditable="true" data-skill-description="sql" aria-label="Editable SQL description">Add
+                      your SQL skills or project examples here.</p>
+                  </div>
+                </article>
+                <article class="tool-detail"><span class="tool-detail-icon python-icon">⌘</span>
+                  <div>
+                    <h2>Python</h2>
+                    <p contenteditable="true" data-skill-description="python" aria-label="Editable Python description">
+                      Add your Python skills or project examples here.</p>
+                  </div>
+                </article>
+                <article class="tool-detail"><span class="tool-detail-icon spss-icon">▣</span>
+                  <div>
+                    <h2>SPSS</h2>
+                    <p contenteditable="true" data-skill-description="spss" aria-label="Editable SPSS description">Add
+                      your SPSS skills or project examples here.</p>
+                  </div>
+                </article>
+              </div>
+              <p class="save-status" id="skillSaveStatus" role="status" aria-live="polite"></p>
             </section>
             <section class="analytics-page" data-analytics-page="visualizations">
-              <header class="analytics-page-heading"><div><h1>Data Visualizations</h1><p>Interactive charts with labels, tooltips, and a toggleable legend.</p></div></header><p class="sample-notice">Sample data for demonstration only—not actual project data.</p>
-              <section class="analytics-panel chart-panel"><div class="analytics-panel-heading"><div><h2>Sample monthly activity</h2><p>Illustrative values (units)</p></div><div class="chart-legend" role="group" aria-label="Toggle chart series"><button class="legend-toggle active" data-chart-series="analysis"><i></i>Analysis</button><button class="legend-toggle active" data-chart-series="visualization"><i></i>Visualization</button></div></div><div class="chart-wrap"><svg id="sampleChart" viewBox="0 0 720 300" role="img" aria-label="Sample monthly activity chart"></svg></div></section>
+              <header class="analytics-page-heading">
+                <div>
+                  <h1>Data Visualizations</h1>
+                  <p>Interactive charts with labels, tooltips, and a toggleable legend.</p>
+                </div>
+              </header>
+              <p class="sample-notice">Sample data for demonstration only—not actual project data.</p>
+              <section class="analytics-panel chart-panel">
+                <div class="analytics-panel-heading">
+                  <div>
+                    <h2>Sample monthly activity</h2>
+                    <p>Illustrative values (units)</p>
+                  </div>
+                  <div class="chart-legend" role="group" aria-label="Toggle chart series"><button
+                      class="legend-toggle active" data-chart-series="analysis"><i></i>Analysis</button><button
+                      class="legend-toggle active" data-chart-series="visualization"><i></i>Visualization</button></div>
+                </div>
+                <div class="chart-wrap"><svg id="sampleChart" viewBox="0 0 720 300" role="img"
+                    aria-label="Sample monthly activity chart"></svg></div>
+              </section>
             </section>
             <section class="analytics-page" data-analytics-page="certificates">
-              <header class="analytics-page-heading"><div><h1>Certificates</h1><p>Certificates and credentials.</p></div></header><figure class="certificate-card"><img src="image/certificate.png" alt="Certificate"><figcaption>Certificate</figcaption></figure>
+              <header class="analytics-page-heading">
+                <div>
+                  <h1>Certificates</h1>
+                  <p>Certificates and credentials.</p>
+                </div>
+              </header>
+              <figure class="certificate-card"><img src="image/certificate.png" alt="Certificate">
+                <figcaption>Certificate</figcaption>
+              </figure>
             </section>
           </div>
         </div>
       </section>
 
       <section class="window notepad-window" id="notepadWindow" role="dialog" aria-label="Notepad" aria-modal="false">
-        <div class="titlebar"><div class="titlebar-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6M8 13h8m-8 4h8"/></svg><span>Notepad</span></div><div class="window-controls"><button class="window-control minimize" aria-label="Minimize window"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor"><path d="M3 8h10"/></svg></button><button class="window-control maximize" aria-label="Maximize window"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor"><rect x="3.5" y="3.5" width="9" height="9"/></svg></button><button class="window-control close" aria-label="Close window"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor"><path d="m4 4 8 8m0-8-8 8"/></svg></button></div></div>
-        <div class="notepad-body"><div class="notepad-toolbar"><span>Untitled - Notepad</span><button id="clearNote">Clear</button></div><textarea id="notepadText" aria-label="Notepad text" placeholder="Start typing..."></textarea><p id="notepadStatus" role="status" aria-live="polite">Notes are saved in this browser.</p></div>
+        <div class="titlebar">
+          <div class="titlebar-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
+              <path d="M14 2v6h6M8 13h8m-8 4h8" />
+            </svg><span>Notepad</span></div>
+          <div class="window-controls"><button class="window-control minimize" aria-label="Minimize window"><svg
+                viewBox="0 0 16 16" fill="none" stroke="currentColor">
+                <path d="M3 8h10" />
+              </svg></button><button class="window-control maximize" aria-label="Maximize window"><svg
+                viewBox="0 0 16 16" fill="none" stroke="currentColor">
+                <rect x="3.5" y="3.5" width="9" height="9" />
+              </svg></button><button class="window-control close" aria-label="Close window"><svg viewBox="0 0 16 16"
+                fill="none" stroke="currentColor">
+                <path d="m4 4 8 8m0-8-8 8" />
+              </svg></button></div>
+        </div>
+        <div class="notepad-body">
+          <div class="notepad-toolbar"><span>Untitled - Notepad</span><button id="clearNote">Clear</button></div>
+          <textarea id="notepadText" aria-label="Notepad text" placeholder="Start typing..."></textarea>
+          <p id="notepadStatus" role="status" aria-live="polite">Notes are saved in this browser.</p>
+        </div>
       </section>
 
       <section class="window games-window" id="gamesWindow" role="dialog" aria-label="Games" aria-modal="false">
-        <div class="titlebar"><div class="titlebar-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 8h12a4 4 0 0 1 3.8 5l-1.1 4a2.5 2.5 0 0 1-4.2 1L14 15h-4l-2.5 3a2.5 2.5 0 0 1-4.2-1l-1.1-4A4 4 0 0 1 6 8Z"/><path d="M7 10v4m-2-2h4m7-1h.01M18 13h.01"/></svg><span>Games</span></div><div class="window-controls"><button class="window-control minimize" aria-label="Minimize window"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor"><path d="M3 8h10"/></svg></button><button class="window-control maximize" aria-label="Maximize window"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor"><rect x="3.5" y="3.5" width="9" height="9"/></svg></button><button class="window-control close" aria-label="Close window"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor"><path d="m4 4 8 8m0-8-8 8"/></svg></button></div></div>
-        <div class="window-body games-body"><header class="window-heading"><div><h1>Take a break</h1><p>Two little games, playable right here.</p></div></header><div class="game-tabs" role="tablist" aria-label="Choose a game"><button class="game-tab active" data-game-tab="tictactoe" role="tab" aria-selected="true">Tic-Tac-Toe</button><button class="game-tab" data-game-tab="memory" role="tab" aria-selected="false">Memory Match</button></div>
-          <section class="game-panel active" data-game-panel="tictactoe"><div class="game-heading"><div><h2>Tic-Tac-Toe</h2><p id="ticStatus" role="status">X's turn</p></div><button class="game-reset" id="ticReset">New game</button></div><div class="tic-board" role="grid" aria-label="Tic-Tac-Toe board"></div><p class="game-hint">Two players take turns on this device.</p></section>
-          <section class="game-panel" data-game-panel="memory" hidden><div class="game-heading"><div><h2>Memory Match</h2><p id="memoryStatus" role="status">Find all matching pairs.</p></div><button class="game-reset" id="memoryReset">Shuffle cards</button></div><div class="memory-board" aria-label="Memory Match cards"></div><p class="game-hint" id="memoryMoves">Moves: 0</p></section>
+        <div class="titlebar">
+          <div class="titlebar-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path
+                d="M6 8h12a4 4 0 0 1 3.8 5l-1.1 4a2.5 2.5 0 0 1-4.2 1L14 15h-4l-2.5 3a2.5 2.5 0 0 1-4.2-1l-1.1-4A4 4 0 0 1 6 8Z" />
+              <path d="M7 10v4m-2-2h4m7-1h.01M18 13h.01" />
+            </svg><span>Games</span></div>
+          <div class="window-controls"><button class="window-control minimize" aria-label="Minimize window"><svg
+                viewBox="0 0 16 16" fill="none" stroke="currentColor">
+                <path d="M3 8h10" />
+              </svg></button><button class="window-control maximize" aria-label="Maximize window"><svg
+                viewBox="0 0 16 16" fill="none" stroke="currentColor">
+                <rect x="3.5" y="3.5" width="9" height="9" />
+              </svg></button><button class="window-control close" aria-label="Close window"><svg viewBox="0 0 16 16"
+                fill="none" stroke="currentColor">
+                <path d="m4 4 8 8m0-8-8 8" />
+              </svg></button></div>
+        </div>
+        <div class="window-body games-body">
+          <header class="window-heading">
+            <div>
+              <h1>Take a break</h1>
+              <p>Two little games, playable right here.</p>
+            </div>
+          </header>
+          <div class="game-tabs" role="tablist" aria-label="Choose a game"><button class="game-tab active"
+              data-game-tab="tictactoe" role="tab" aria-selected="true">Tic-Tac-Toe</button><button class="game-tab"
+              data-game-tab="memory" role="tab" aria-selected="false">Memory Match</button></div>
+          <section class="game-panel active" data-game-panel="tictactoe">
+            <div class="game-heading">
+              <div>
+                <h2>Tic-Tac-Toe</h2>
+                <p id="ticStatus" role="status">X's turn</p>
+              </div><button class="game-reset" id="ticReset">New game</button>
+            </div>
+            <div class="tic-board" role="grid" aria-label="Tic-Tac-Toe board"></div>
+            <p class="game-hint">Two players take turns on this device.</p>
+          </section>
+          <section class="game-panel" data-game-panel="memory" hidden>
+            <div class="game-heading">
+              <div>
+                <h2>Memory Match</h2>
+                <p id="memoryStatus" role="status">Find all matching pairs.</p>
+              </div><button class="game-reset" id="memoryReset">Shuffle cards</button>
+            </div>
+            <div class="memory-board" aria-label="Memory Match cards"></div>
+            <p class="game-hint" id="memoryMoves">Moves: 0</p>
+          </section>
         </div>
       </section>
 
       <section class="window" id="settingsWindow" role="dialog" aria-label="Settings" aria-modal="false">
-        <div class="titlebar"><div class="titlebar-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="m19.4 15 .1.1 1.4 1.1-1.5 2.6-1.7-.6a8 8 0 0 1-1.8 1l-.3 1.8h-3l-.3-1.8a8 8 0 0 1-1.8-1l-1.7.6-1.5-2.6 1.4-1.1a8 8 0 0 1 0-2l-1.4-1.1 1.5-2.6 1.7.6a8 8 0 0 1 1.8-1l.3-1.8h3l.3 1.8a8 8 0 0 1 1.8 1l1.7-.6 1.5 2.6-1.4 1.1a8 8 0 0 1 0 1.9Z"/></svg><span>Settings</span></div><div class="window-controls"><button class="window-control minimize" aria-label="Minimize window"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor"><path d="M3 8h10"/></svg></button><button class="window-control maximize" aria-label="Maximize window"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor"><rect x="3.5" y="3.5" width="9" height="9"/></svg></button><button class="window-control close" aria-label="Close window"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor"><path d="m4 4 8 8m0-8-8 8"/></svg></button></div></div>
-        <div class="window-body"><header class="window-heading"><div><h1>Settings</h1><p>Make this little desktop feel like yours.</p></div></header><div class="settings-layout"><nav class="settings-nav" aria-label="Settings categories"><button class="active" data-settings-tab="personalization"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m15 5 4 4M4 20l4-.8L19.4 7.8a2.1 2.1 0 0 0-3-3L5 16.2 4 20Z"/></svg>Personalization</button><button data-settings-tab="display"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8m-4-4v4"/></svg>Display</button><button data-settings-tab="system"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 11v5m0-8h.01"/></svg>System</button></nav><div class="settings-content" id="settingsContent"><h2>Personalize your desktop</h2><p>Choose a wallpaper and set your preferred appearance.</p><div class="setting-row"><div><h3>Wallpaper</h3><p>Pick a background for your desktop.</p></div><div class="wallpaper-options" aria-label="Choose wallpaper"><button class="wallpaper-option" data-choice="mountain" aria-label="Mountain wallpaper" aria-pressed="true"></button><button class="wallpaper-option" data-choice="coast" aria-label="Coast wallpaper" aria-pressed="false"></button><button class="wallpaper-option" data-choice="city" aria-label="City wallpaper" aria-pressed="false"></button><button class="wallpaper-option" data-choice="forest" aria-label="Forest wallpaper" aria-pressed="false"></button></div></div><div class="setting-row"><div><h3>Appearance</h3><p>Choose light or dark mode.</p></div><div class="theme-toggle"><button data-theme="dark" aria-pressed="true">Dark</button><button data-theme="light" aria-pressed="false">Light</button></div></div></div></div></div>
+        <div class="titlebar">
+          <div class="titlebar-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <circle cx="12" cy="12" r="3" />
+              <path
+                d="m19.4 15 .1.1 1.4 1.1-1.5 2.6-1.7-.6a8 8 0 0 1-1.8 1l-.3 1.8h-3l-.3-1.8a8 8 0 0 1-1.8-1l-1.7.6-1.5-2.6 1.4-1.1a8 8 0 0 1 0-2l-1.4-1.1 1.5-2.6 1.7.6a8 8 0 0 1 1.8-1l.3-1.8h3l.3 1.8a8 8 0 0 1 1.8 1l1.7-.6 1.5 2.6-1.4 1.1a8 8 0 0 1 0 1.9Z" />
+            </svg><span>Settings</span></div>
+          <div class="window-controls"><button class="window-control minimize" aria-label="Minimize window"><svg
+                viewBox="0 0 16 16" fill="none" stroke="currentColor">
+                <path d="M3 8h10" />
+              </svg></button><button class="window-control maximize" aria-label="Maximize window"><svg
+                viewBox="0 0 16 16" fill="none" stroke="currentColor">
+                <rect x="3.5" y="3.5" width="9" height="9" />
+              </svg></button><button class="window-control close" aria-label="Close window"><svg viewBox="0 0 16 16"
+                fill="none" stroke="currentColor">
+                <path d="m4 4 8 8m0-8-8 8" />
+              </svg></button></div>
+        </div>
+        <div class="window-body">
+          <header class="window-heading">
+            <div>
+              <h1>Settings</h1>
+              <p>Make this little desktop feel like yours.</p>
+            </div>
+          </header>
+          <div class="settings-layout">
+            <nav class="settings-nav" aria-label="Settings categories"><button class="active"
+                data-settings-tab="personalization"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="1.8">
+                  <path d="m15 5 4 4M4 20l4-.8L19.4 7.8a2.1 2.1 0 0 0-3-3L5 16.2 4 20Z" />
+                </svg>Personalization</button><button data-settings-tab="display"><svg viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="1.8">
+                  <rect x="3" y="4" width="18" height="13" rx="2" />
+                  <path d="M8 21h8m-4-4v4" />
+                </svg>Display</button><button data-settings-tab="system"><svg viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="1.8">
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M12 11v5m0-8h.01" />
+                </svg>System</button></nav>
+            <div class="settings-content" id="settingsContent">
+              <h2>Personalize your desktop</h2>
+              <p>Choose a wallpaper and set your preferred appearance.</p>
+              <div class="setting-row">
+                <div>
+                  <h3>Wallpaper</h3>
+                  <p>Pick a background for your desktop.</p>
+                </div>
+                <div class="wallpaper-options" aria-label="Choose wallpaper"><button class="wallpaper-option"
+                    data-choice="mountain" aria-label="Mountain wallpaper" aria-pressed="true"></button><button
+                    class="wallpaper-option" data-choice="coast" aria-label="Coast wallpaper"
+                    aria-pressed="false"></button><button class="wallpaper-option" data-choice="city"
+                    aria-label="City wallpaper" aria-pressed="false"></button><button class="wallpaper-option"
+                    data-choice="forest" aria-label="Forest wallpaper" aria-pressed="false"></button></div>
+              </div>
+              <div class="setting-row">
+                <div>
+                  <h3>Appearance</h3>
+                  <p>Choose light or dark mode.</p>
+                </div>
+                <div class="theme-toggle"><button data-theme="dark" aria-pressed="true">Dark</button><button
+                    data-theme="light" aria-pressed="false">Light</button></div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section class="window" id="aboutWindow" role="dialog" aria-label="About Me" aria-modal="false">
-        <div class="titlebar"><div class="titlebar-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg><span>About Me</span></div><div class="window-controls"><button class="window-control minimize" aria-label="Minimize window"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor"><path d="M3 8h10"/></svg></button><button class="window-control maximize" aria-label="Maximize window"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor"><rect x="3.5" y="3.5" width="9" height="9"/></svg></button><button class="window-control close" aria-label="Close window"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor"><path d="m4 4 8 8m0-8-8 8"/></svg></button></div></div>
-        <div class="window-body"><header class="window-heading"><div><h1>About me</h1><p>Data analysis and web development.</p></div></header><div class="about-panel"><div class="about-profile"><div class="avatar" aria-hidden="true">O</div><div><h2>Hi, I'm Oyinola.</h2><p>Data analyst and web developer.</p></div></div><p class="about-copy">I turn data into clear, useful insights and build thoughtful web experiences. I work with Excel, Power BI, and SPSS for data analysis, and use HTML, CSS, and Bootstrap to create responsive websites.</p><h2 class="skills-heading">Skills &amp; tools</h2><div class="skill-list"><span>HTML</span><span>CSS</span><span>Bootstrap</span><span>Excel</span><span>Power BI</span><span>SPSS</span></div><a class="about-contact" href="https://wa.me/2348032760259" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20l1.2-5.4A8.4 8.4 0 1 1 21 11.5Z"/><path d="M8 9c.7 2.1 2.3 3.7 4.5 4.5l1.2-1.1 2 .9c-.2 1.2-1.2 2-2.4 1.9-3.6-.4-6.2-3-6.6-6.6-.1-1.2.7-2.2 1.9-2.4l.9 2L8 9Z"/></svg>Say hello on WhatsApp</a></div></div>
+        <div class="titlebar">
+          <div class="titlebar-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <circle cx="12" cy="8" r="4" />
+              <path d="M4 21a8 8 0 0 1 16 0" />
+            </svg><span>About Me</span></div>
+          <div class="window-controls"><button class="window-control minimize" aria-label="Minimize window"><svg
+                viewBox="0 0 16 16" fill="none" stroke="currentColor">
+                <path d="M3 8h10" />
+              </svg></button><button class="window-control maximize" aria-label="Maximize window"><svg
+                viewBox="0 0 16 16" fill="none" stroke="currentColor">
+                <rect x="3.5" y="3.5" width="9" height="9" />
+              </svg></button><button class="window-control close" aria-label="Close window"><svg viewBox="0 0 16 16"
+                fill="none" stroke="currentColor">
+                <path d="m4 4 8 8m0-8-8 8" />
+              </svg></button></div>
+        </div>
+        <div class="window-body">
+          <header class="window-heading">
+            <div>
+              <h1>About me</h1>
+              <p>Data analysis and web development.</p>
+            </div>
+          </header>
+          <div class="about-panel">
+            <div class="about-profile">
+              <div class="avatar" aria-hidden="true">O</div>
+              <div>
+                <h2>Hi, I'm Oyinola.</h2>
+                <p>Data analyst and web developer.</p>
+              </div>
+            </div>
+            <p class="about-copy">I turn data into clear, useful insights and build thoughtful web experiences. I work
+              with Excel, Power BI, and SPSS for data analysis, and use HTML, CSS, and Bootstrap to create responsive
+              websites.</p>
+            <h2 class="skills-heading">Skills &amp; tools</h2>
+            <div class="skill-list"><span>HTML</span><span>CSS</span><span>Bootstrap</span><span>Excel</span><span>Power
+                BI</span><span>SPSS</span></div><a class="about-contact" href="https://wa.me/2348032760259"
+              target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.8">
+                <path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20l1.2-5.4A8.4 8.4 0 1 1 21 11.5Z" />
+                <path
+                  d="M8 9c.7 2.1 2.3 3.7 4.5 4.5l1.2-1.1 2 .9c-.2 1.2-1.2 2-2.4 1.9-3.6-.4-6.2-3-6.6-6.6-.1-1.2.7-2.2 1.9-2.4l.9 2L8 9Z" />
+              </svg>Say hello on WhatsApp</a>
+          </div>
+        </div>
       </section>
 
       <section class="window" id="contactWindow" role="dialog" aria-label="Contact Oyinola" aria-modal="false">
-        <div class="titlebar"><div class="titlebar-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><span>Contact</span></div><div class="window-controls"><button class="window-control minimize" aria-label="Minimize window"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor"><path d="M3 8h10"/></svg></button><button class="window-control maximize" aria-label="Maximize window"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor"><rect x="3.5" y="3.5" width="9" height="9"/></svg></button><button class="window-control close" aria-label="Close window"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor"><path d="m4 4 8 8m0-8-8 8"/></svg></button></div></div>
-        <div class="window-body"><header class="window-heading"><div><h1>Let's connect</h1><p>Find me around the web.</p></div></header><div class="contact-links"><a class="contact-link" href="https://wa.me/2348032760259" target="_blank" rel="noopener noreferrer"><span class="contact-badge">WA</span><span><strong>WhatsApp</strong><small>08032760259</small></span><span class="contact-arrow">&#8599;</span></a><a class="contact-link" href="https://www.tiktok.com/@0yin_0la?_r=1&amp;_t=ZS-9ATFGXVoA8y" target="_blank" rel="noopener noreferrer"><span class="contact-badge">TT</span><span><strong>TikTok</strong><small>@0yin_0la</small></span><span class="contact-arrow">&#8599;</span></a><a class="contact-link" href="https://linkedin.com/in/oyindamola-olushola-8717a141a" target="_blank" rel="noopener noreferrer"><span class="contact-badge">in</span><span><strong>LinkedIn</strong><small>Oyinola Olushola</small></span><span class="contact-arrow">&#8599;</span></a><a class="contact-link" href="https://github.com/0yinola" target="_blank" rel="noopener noreferrer"><span class="contact-badge">GH</span><span><strong>GitHub</strong><small>github.com/0yinola</small></span><span class="contact-arrow">&#8599;</span></a></div></div>
+        <div class="titlebar">
+          <div class="titlebar-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="3" y="5" width="18" height="14" rx="2" />
+              <path d="m3 7 9 6 9-6" />
+            </svg><span>Contact</span></div>
+          <div class="window-controls"><button class="window-control minimize" aria-label="Minimize window"><svg
+                viewBox="0 0 16 16" fill="none" stroke="currentColor">
+                <path d="M3 8h10" />
+              </svg></button><button class="window-control maximize" aria-label="Maximize window"><svg
+                viewBox="0 0 16 16" fill="none" stroke="currentColor">
+                <rect x="3.5" y="3.5" width="9" height="9" />
+              </svg></button><button class="window-control close" aria-label="Close window"><svg viewBox="0 0 16 16"
+                fill="none" stroke="currentColor">
+                <path d="m4 4 8 8m0-8-8 8" />
+              </svg></button></div>
+        </div>
+        <div class="window-body">
+          <header class="window-heading">
+            <div>
+              <h1>Let's connect</h1>
+              <p>Find me around the web.</p>
+            </div>
+          </header>
+          <div class="contact-links"><a class="contact-link" href="https://wa.me/2348032760259" target="_blank"
+              rel="noopener noreferrer"><span
+                class="contact-badge">WA</span><span><strong>WhatsApp</strong><small>08032760259</small></span><span
+                class="contact-arrow">&#8599;</span></a><a class="contact-link"
+              href="https://www.tiktok.com/@0yin_0la?_r=1&amp;_t=ZS-9ATFGXVoA8y" target="_blank"
+              rel="noopener noreferrer"><span
+                class="contact-badge">TT</span><span><strong>TikTok</strong><small>@0yin_0la</small></span><span
+                class="contact-arrow">&#8599;</span></a><a class="contact-link"
+              href="https://linkedin.com/in/oyindamola-olushola-8717a141a" target="_blank"
+              rel="noopener noreferrer"><span
+                class="contact-badge">in</span><span><strong>LinkedIn</strong><small>Oyinola
+                  Olushola</small></span><span class="contact-arrow">&#8599;</span></a><a class="contact-link"
+              href="https://github.com/0yinola" target="_blank" rel="noopener noreferrer"><span
+                class="contact-badge">GH</span><span><strong>GitHub</strong><small>github.com/0yinola</small></span><span
+                class="contact-arrow">&#8599;</span></a></div>
+        </div>
       </section>
 
       <section class="window" id="recycleWindow" role="dialog" aria-label="Recycle Bin" aria-modal="false">
-        <div class="titlebar"><div class="titlebar-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16m-14 0 1 14h10l1-14M9 7V4h6v3m-5 4v6m4-6v6"/></svg><span>Recycle Bin</span></div><div class="window-controls"><button class="window-control minimize" aria-label="Minimize window"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor"><path d="M3 8h10"/></svg></button><button class="window-control maximize" aria-label="Maximize window"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor"><rect x="3.5" y="3.5" width="9" height="9"/></svg></button><button class="window-control close" aria-label="Close window"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor"><path d="m4 4 8 8m0-8-8 8"/></svg></button></div></div>
-        <div class="window-body recycle-body"><header class="window-heading"><div><h1>Recycle Bin</h1><p>0 items</p></div></header><div class="recycle-empty"><svg viewBox="0 0 64 64" fill="none" aria-hidden="true"><path d="M19 18h26l-2.2 34H21.2L19 18Z" fill="#D9EDF0"/><path d="M14 14h36v5H14zM25 9h14l2.5 5h-19L25 9Z" fill="#8EB6BE"/><path d="m27 25 1.5 19m8-19L35 44" stroke="#78A3AB" stroke-width="2.5" stroke-linecap="round"/></svg><p>This folder is empty.</p></div></div>
+        <div class="titlebar">
+          <div class="titlebar-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M4 7h16m-14 0 1 14h10l1-14M9 7V4h6v3m-5 4v6m4-6v6" />
+            </svg><span>Recycle Bin</span></div>
+          <div class="window-controls"><button class="window-control minimize" aria-label="Minimize window"><svg
+                viewBox="0 0 16 16" fill="none" stroke="currentColor">
+                <path d="M3 8h10" />
+              </svg></button><button class="window-control maximize" aria-label="Maximize window"><svg
+                viewBox="0 0 16 16" fill="none" stroke="currentColor">
+                <rect x="3.5" y="3.5" width="9" height="9" />
+              </svg></button><button class="window-control close" aria-label="Close window"><svg viewBox="0 0 16 16"
+                fill="none" stroke="currentColor">
+                <path d="m4 4 8 8m0-8-8 8" />
+              </svg></button></div>
+        </div>
+        <div class="window-body recycle-body">
+          <header class="window-heading">
+            <div>
+              <h1>Recycle Bin</h1>
+              <p>0 items</p>
+            </div>
+          </header>
+          <div class="recycle-empty"><svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
+              <path d="M19 18h26l-2.2 34H21.2L19 18Z" fill="#D9EDF0" />
+              <path d="M14 14h36v5H14zM25 9h14l2.5 5h-19L25 9Z" fill="#8EB6BE" />
+              <path d="m27 25 1.5 19m8-19L35 44" stroke="#78A3AB" stroke-width="2.5" stroke-linecap="round" />
+            </svg>
+            <p>This folder is empty.</p>
+          </div>
+        </div>
       </section>
 
       <section class="start-menu" id="startMenu" aria-label="Start menu">
-        <label class="start-search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg><input id="startSearch" type="search" placeholder="Search apps and projects" aria-label="Search apps and projects"></label>
+        <label class="start-search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="10.8" cy="10.8" r="6.8" />
+            <path d="m16 16 5 5" />
+          </svg><input id="startSearch" type="search" placeholder="Search apps and projects"
+            aria-label="Search apps and projects"></label>
         <div class="start-section-title"><span>Pinned</span><span>All apps &rsaquo;</span></div>
-        <div class="start-apps"><button class="start-app" data-open="workWindow"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M2 6.5A2.5 2.5 0 0 1 4.5 4H10l2 2h7.5A2.5 2.5 0 0 1 22 8.5v10a2.5 2.5 0 0 1-2.5 2.5h-15A2.5 2.5 0 0 1 2 18.5v-12Z"/></svg>My Work</button><button class="start-app" data-open="aboutWindow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>About Me</button><button class="start-app" data-open="settingsWindow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="m19.4 15 .1.1 1.4 1.1-1.5 2.6-1.7-.6a8 8 0 0 1-1.8 1l-.3 1.8h-3l-.3-1.8a8 8 0 0 1-1.8-1l-1.7.6-1.5-2.6 1.4-1.1a8 8 0 0 1 0-2l-1.4-1.1 1.5-2.6 1.7.6a8 8 0 0 1 1.8-1l.3-1.8h3l.3 1.8a8 8 0 0 1 1.8 1l1.7-.6 1.5 2.6-1.4 1.1a8 8 0 0 1 0 1.9Z"/></svg>Settings</button><button class="start-app" data-open="contactWindow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>Contact</button></div>
-        <div class="start-apps start-apps-extra"><button class="start-app" data-open="analyticsWindow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 3v18h18M7 14l4-4 4 3 6-7"/></svg>Analytics Lab</button><button class="start-app" data-open="notepadWindow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6M8 13h8m-8 4h8"/></svg>Notepad</button><button class="start-app" data-open="gamesWindow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 8h12a4 4 0 0 1 3.8 5l-1.1 4a2.5 2.5 0 0 1-4.2 1L14 15h-4l-2.5 3a2.5 2.5 0 0 1-4.2-1l-1.1-4A4 4 0 0 1 6 8Z"/></svg>Games</button></div>
-        <div class="start-footer"><div class="start-user"><div class="avatar">O</div><span>Oyinola</span></div><button class="power-button" id="powerButton" aria-label="Return to sign in"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2v10"/><path d="M5.6 5.6a9 9 0 1 0 12.8 0"/></svg></button></div>
+        <div class="start-apps"><button class="start-app" data-open="workWindow"><svg viewBox="0 0 24 24"
+              fill="currentColor">
+              <path
+                d="M2 6.5A2.5 2.5 0 0 1 4.5 4H10l2 2h7.5A2.5 2.5 0 0 1 22 8.5v10a2.5 2.5 0 0 1-2.5 2.5h-15A2.5 2.5 0 0 1 2 18.5v-12Z" />
+            </svg>My Work</button><button class="start-app" data-open="aboutWindow"><svg viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.8">
+              <circle cx="12" cy="8" r="4" />
+              <path d="M4 21a8 8 0 0 1 16 0" />
+            </svg>About Me</button><button class="start-app" data-open="settingsWindow"><svg viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="1.8">
+              <circle cx="12" cy="12" r="3" />
+              <path
+                d="m19.4 15 .1.1 1.4 1.1-1.5 2.6-1.7-.6a8 8 0 0 1-1.8 1l-.3 1.8h-3l-.3-1.8a8 8 0 0 1-1.8-1l-1.7.6-1.5-2.6 1.4-1.1a8 8 0 0 1 0-2l-1.4-1.1 1.5-2.6 1.7.6a8 8 0 0 1 1.8-1l.3-1.8h3l.3 1.8a8 8 0 0 1 1.8 1l1.7-.6 1.5 2.6-1.4 1.1a8 8 0 0 1 0 1.9Z" />
+            </svg>Settings</button><button class="start-app" data-open="contactWindow"><svg viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="3" y="5" width="18" height="14" rx="2" />
+              <path d="m3 7 9 6 9-6" />
+            </svg>Contact</button></div>
+        <div class="start-apps start-apps-extra"><button class="start-app" data-open="analyticsWindow"><svg
+              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M3 3v18h18M7 14l4-4 4 3 6-7" />
+            </svg>Analytics Lab</button><button class="start-app" data-open="notepadWindow"><svg viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
+              <path d="M14 2v6h6M8 13h8m-8 4h8" />
+            </svg>Notepad</button><button class="start-app" data-open="gamesWindow"><svg viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.8">
+              <path
+                d="M6 8h12a4 4 0 0 1 3.8 5l-1.1 4a2.5 2.5 0 0 1-4.2 1L14 15h-4l-2.5 3a2.5 2.5 0 0 1-4.2-1l-1.1-4A4 4 0 0 1 6 8Z" />
+            </svg>Games</button></div>
+        <div class="start-footer">
+          <div class="start-user">
+            <div class="avatar">O</div><span>Oyinola</span>
+          </div><button class="power-button" id="powerButton" aria-label="Return to sign in"><svg viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M12 2v10" />
+              <path d="M5.6 5.6a9 9 0 1 0 12.8 0" />
+            </svg></button>
+        </div>
       </section>
 
-      <aside class="calendar-popover" id="calendarPopover"><h2 id="calendarDate"></h2><p id="calendarFullDate"></p><hr class="calendar-rule"><div class="calendar-event"><span></span><div>Today<br><small>Make something good.</small></div></div></aside>
-      <aside class="notification" id="notification"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9Zm-8 12h4"/></svg><div>You're all caught up.<br><span>No new notifications</span></div></aside>
-      <footer class="taskbar" aria-label="Taskbar"><div class="taskbar-center"><button class="taskbar-button start-button" id="startButton" aria-label="Open Start menu" title="Start"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M2 3.4 10.7 2v9H2V3.4Zm10.3-1.6L22 0v11h-9.7V1.8ZM2 12.8h8.7v9L2 20.4v-7.6Zm10.3 0H22v11l-9.7-1.8v-9.2Z"/></svg></button><button class="taskbar-button" data-open="workWindow" aria-label="Open My Work" title="My Work"><svg viewBox="0 0 24 24" fill="#e8bb56"><path d="M2 6.5A2.5 2.5 0 0 1 4.5 4H10l2 2h7.5A2.5 2.5 0 0 1 22 8.5v10a2.5 2.5 0 0 1-2.5 2.5h-15A2.5 2.5 0 0 1 2 18.5v-12Z"/></svg></button><button class="taskbar-button" data-open="aboutWindow" aria-label="Open About Me" title="About Me"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></button><button class="taskbar-button" data-open="settingsWindow" aria-label="Open Settings" title="Settings"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="m19.4 15 .1.1 1.4 1.1-1.5 2.6-1.7-.6a8 8 0 0 1-1.8 1l-.3 1.8h-3l-.3-1.8a8 8 0 0 1-1.8-1l-1.7.6-1.5-2.6 1.4-1.1a8 8 0 0 1 0-2l-1.4-1.1 1.5-2.6 1.7.6a8 8 0 0 1 1.8-1l.3-1.8h3l.3 1.8a8 8 0 0 1 1.8 1l1.7-.6 1.5 2.6-1.4 1.1a8 8 0 0 1 0 1.9Z"/></svg></button></div><div class="system-tray"><button class="tray-button" id="wifiButton" aria-label="Network status" title="Connected"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8.8a15 15 0 0 1 20 0M5 12a10.5 10.5 0 0 1 14 0m-11 3.2a6 6 0 0 1 8 0M12 19h.01"/></svg></button><button class="tray-button" id="notificationButton" aria-label="Notifications" title="Notifications"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9Zm-8 12h4"/></svg></button><button class="tray-button tray-time" id="clockButton" aria-label="Open calendar"><span id="taskbarClock"></span><span id="taskbarDate"></span></button></div></footer>
+      <aside class="calendar-popover" id="calendarPopover">
+        <h2 id="calendarDate"></h2>
+        <p id="calendarFullDate"></p>
+        <hr class="calendar-rule">
+        <div class="calendar-event"><span></span>
+          <div>Today<br><small>Make something good.</small></div>
+        </div>
+      </aside>
+      <aside class="notification" id="notification"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="1.8">
+          <path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9Zm-8 12h4" />
+        </svg>
+        <div>You're all caught up.<br><span>No new notifications</span></div>
+      </aside>
+      <footer class="taskbar" aria-label="Taskbar">
+        <div class="taskbar-center"><button class="taskbar-button start-button" id="startButton"
+            aria-label="Open Start menu" title="Start"><svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M2 3.4 10.7 2v9H2V3.4Zm10.3-1.6L22 0v11h-9.7V1.8ZM2 12.8h8.7v9L2 20.4v-7.6Zm10.3 0H22v11l-9.7-1.8v-9.2Z" />
+            </svg></button><button class="taskbar-button" data-open="workWindow" aria-label="Open My Work"
+            title="My Work"><svg viewBox="0 0 24 24" fill="#e8bb56">
+              <path
+                d="M2 6.5A2.5 2.5 0 0 1 4.5 4H10l2 2h7.5A2.5 2.5 0 0 1 22 8.5v10a2.5 2.5 0 0 1-2.5 2.5h-15A2.5 2.5 0 0 1 2 18.5v-12Z" />
+            </svg></button><button class="taskbar-button" data-open="aboutWindow" aria-label="Open About Me"
+            title="About Me"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <circle cx="12" cy="8" r="4" />
+              <path d="M4 21a8 8 0 0 1 16 0" />
+            </svg></button><button class="taskbar-button" data-open="settingsWindow" aria-label="Open Settings"
+            title="Settings"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <circle cx="12" cy="12" r="3" />
+              <path
+                d="m19.4 15 .1.1 1.4 1.1-1.5 2.6-1.7-.6a8 8 0 0 1-1.8 1l-.3 1.8h-3l-.3-1.8a8 8 0 0 1-1.8-1l-1.7.6-1.5-2.6 1.4-1.1a8 8 0 0 1 0-2l-1.4-1.1 1.5-2.6 1.7.6a8 8 0 0 1 1.8-1l.3-1.8h3l.3 1.8a8 8 0 0 1 1.8 1l1.7-.6 1.5 2.6-1.4 1.1a8 8 0 0 1 0 1.9Z" />
+            </svg></button></div>
+        <div class="system-tray"><button class="tray-button" id="wifiButton" aria-label="Network status"
+            title="Connected"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M2 8.8a15 15 0 0 1 20 0M5 12a10.5 10.5 0 0 1 14 0m-11 3.2a6 6 0 0 1 8 0M12 19h.01" />
+            </svg></button><button class="tray-button" id="notificationButton" aria-label="Notifications"
+            title="Notifications"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9Zm-8 12h4" />
+            </svg></button><button class="tray-button tray-time" id="clockButton" aria-label="Open calendar"><span
+              id="taskbarClock"></span><span id="taskbarDate"></span></button></div>
+      </footer>
     </section>
   </main>
   <script src="script.js" defer></script>
 </body>
+
 </html>
